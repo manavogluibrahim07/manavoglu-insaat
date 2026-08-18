@@ -17,175 +17,673 @@
 <body>
 
 
-    <header class="navbar">
+<header class="navbar">
 
-        <div class="logo">
+    <div class="logo">
+        MANAVOĞLU
+        <span>İNŞAAT</span>
+    </div>
 
-            MANAVOĞLU
 
-            <span>İNŞAAT</span>
+    <nav class="menu">
+
+        <a href="../index.html">
+            ANA SAYFA
+        </a>
+
+        <a href="#">
+            KURUMSAL
+        </a>
+
+        <a href="../index.html">
+            PROJELER
+        </a>
+
+        <a href="#">
+            HİZMETLER
+        </a>
+
+        <a href="#">
+            İLETİŞİM
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =====================================
+     PROJE HERO
+===================================== -->
+
+<section class="project-hero">
+
+    <img
+        src="../images/manavoglu-vera.png"
+        alt="Manavoğlu Vera"
+    >
+
+    <div class="project-hero-overlay"></div>
+
+
+    <div class="project-hero-content">
+
+        <p>
+            MANAVOĞLU İNŞAAT
+        </p>
+
+        <h1>
+            MANAVOĞLU<br>
+            VERA
+        </h1>
+
+        <span>
+            KONUT PROJESİ
+        </span>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     PROJE TANITIM
+===================================== -->
+
+<section class="project-intro">
+
+    <div class="project-intro-title">
+
+        <p class="section-small">
+            PROJE HAKKINDA
+        </p>
+
+        <h2>
+            Modern yaşam için
+            tasarlanan yeni nesil
+            yaşam alanı.
+        </h2>
+
+    </div>
+
+
+    <div class="project-description">
+
+        <p>
+            Manavoğlu Vera, çağdaş mimari anlayışı,
+            nitelikli malzeme kullanımı ve kullanıcı
+            odaklı tasarım yaklaşımıyla ele alınan
+            bir konut projesidir.
+        </p>
+
+        <p>
+            Projenin tasarımında estetik, işlevsellik
+            ve uzun ömürlü kullanım bir arada
+            değerlendirilmiştir.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     PROJE BİLGİLERİ
+===================================== -->
+
+<section class="project-details">
+
+    <div class="detail-item">
+
+        <span>
+            PROJE
+        </span>
+
+        <strong>
+            MANAVOĞLU VERA
+        </strong>
+
+    </div>
+
+
+    <div class="detail-item">
+
+        <span>
+            PROJE TÜRÜ
+        </span>
+
+        <strong>
+            KONUT
+        </strong>
+
+    </div>
+
+
+    <div class="detail-item">
+
+        <span>
+            KONUM
+        </span>
+
+        <strong>
+            ANTALYA
+        </strong>
+
+    </div>
+
+
+    <div class="detail-item">
+
+        <span>
+            TASARIM
+        </span>
+
+        <strong>
+            MANAVOĞLU İNŞAAT
+        </strong>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     PROJE GALERİ / TABS
+===================================== -->
+
+<section class="vera-gallery">
+
+
+    <div class="gallery-header">
+
+        <p class="section-small">
+            PROJE DETAYLARI
+        </p>
+
+        <h2>
+            Projeyi keşfedin.
+        </h2>
+
+    </div>
+
+
+
+    <!-- TAB BUTONLARI -->
+
+    <div class="gallery-tabs">
+
+        <button
+            class="tab-button active"
+            onclick="openTab(event, 'plans')">
+
+            PLAN BOYAMALARI
+
+        </button>
+
+
+        <button
+            class="tab-button"
+            onclick="openTab(event, 'renders')">
+
+            RENDERLAR
+
+        </button>
+
+
+        <button
+            class="tab-button"
+            onclick="openTab(event, 'interior')">
+
+            İÇ MEKAN
+
+        </button>
+
+
+        <button
+            class="tab-button"
+            onclick="openTab(event, 'elevations')">
+
+            GÖRÜNÜŞLER
+
+        </button>
+
+    </div>
+
+
+
+    <!-- =================================
+         PLANLAR
+    ================================== -->
+
+    <div
+        id="plans"
+        class="tab-content active">
+
+
+        <div class="gallery-title">
+
+            <span>
+                01
+            </span>
+
+            <h3>
+                Plan Boyamaları
+            </h3>
 
         </div>
 
 
-        <nav class="menu">
+        <div class="plan-grid">
 
-            <a href="../index.html">
-                ANA SAYFA
-            </a>
 
-            <a href="#">
-                KURUMSAL
-            </a>
+            <div class="plan-card">
 
-            <a href="../index.html#projects">
-                PROJELER
-            </a>
+                <img
+                    src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=85"
+                    alt="Zemin Kat Planı"
+                >
 
-            <a href="#">
-                HİZMETLER
-            </a>
+                <div class="plan-label">
 
-            <a href="#">
-                İLETİŞİM
-            </a>
+                    <span>
+                        01
+                    </span>
 
-        </nav>
+                    <strong>
+                        ZEMİN KAT
+                    </strong>
 
-    </header>
+                </div>
+
+            </div>
 
 
 
-    <main>
+            <div class="plan-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=85"
+                    alt="1. Kat Planı"
+                >
+
+                <div class="plan-label">
+
+                    <span>
+                        02
+                    </span>
+
+                    <strong>
+                        1. KAT
+                    </strong>
+
+                </div>
+
+            </div>
 
 
-        <section class="project-hero">
 
-            <img
-                src="../images/manavoglu-vera.png"
-                alt="Manavoğlu Vera"
-            >
+            <div class="plan-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=85"
+                    alt="2. Kat Planı"
+                >
+
+                <div class="plan-label">
+
+                    <span>
+                        03
+                    </span>
+
+                    <strong>
+                        2. KAT
+                    </strong>
+
+                </div>
+
+            </div>
 
 
-            <div class="project-hero-overlay"></div>
+
+            <div class="plan-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=85"
+                    alt="3. Kat Planı"
+                >
+
+                <div class="plan-label">
+
+                    <span>
+                        04
+                    </span>
+
+                    <strong>
+                        3. KAT
+                    </strong>
+
+                </div>
+
+            </div>
 
 
-            <div class="project-hero-content">
+        </div>
 
-                <p>
-                    MANAVOĞLU İNŞAAT
-                </p>
+    </div>
 
-                <h1>
-                    MANAVOĞLU<br>
-                    VERA
-                </h1>
+
+
+    <!-- =================================
+         RENDERLAR
+    ================================== -->
+
+    <div
+        id="renders"
+        class="tab-content">
+
+
+        <div class="gallery-title">
+
+            <span>
+                02
+            </span>
+
+            <h3>
+                Mimari Renderlar
+            </h3>
+
+        </div>
+
+
+        <div class="render-grid">
+
+
+            <div class="render-card large">
+
+                <img
+                    src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2000&q=90"
+                    alt="Modern konut renderı"
+                >
+
+            </div>
+
+
+            <div class="render-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1600&q=90"
+                    alt="Modern konut renderı"
+                >
+
+            </div>
+
+
+            <div class="render-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=90"
+                    alt="Modern konut renderı"
+                >
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================
+         İÇ MEKAN
+    ================================== -->
+
+    <div
+        id="interior"
+        class="tab-content">
+
+
+        <div class="gallery-title">
+
+            <span>
+                03
+            </span>
+
+            <h3>
+                İç Mekan
+            </h3>
+
+        </div>
+
+
+        <div class="interior-grid">
+
+
+            <div class="interior-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=90"
+                    alt="Modern salon"
+                >
+
+                <div>
+                    SALON
+                </div>
+
+            </div>
+
+
+            <div class="interior-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=90"
+                    alt="Modern iç mekan"
+                >
+
+                <div>
+                    YAŞAM ALANI
+                </div>
+
+            </div>
+
+
+            <div class="interior-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1600&q=90"
+                    alt="Modern mutfak"
+                >
+
+                <div>
+                    MUTFAK
+                </div>
+
+            </div>
+
+
+            <div class="interior-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=90"
+                    alt="Modern yatak odası"
+                >
+
+                <div>
+                    YATAK ODASI
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================
+         GÖRÜNÜŞLER
+    ================================== -->
+
+    <div
+        id="elevations"
+        class="tab-content">
+
+
+        <div class="gallery-title">
+
+            <span>
+                04
+            </span>
+
+            <h3>
+                Mimari Görünüşler
+            </h3>
+
+        </div>
+
+
+        <div class="elevation-grid">
+
+
+            <div class="elevation-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1800&q=90"
+                    alt="Kuzey görünüşü"
+                >
 
                 <span>
-                    KONUT PROJESİ
+                    KUZEY
                 </span>
 
             </div>
 
-        </section>
 
+            <div class="elevation-card">
 
-
-        <section class="project-intro">
-
-            <div>
-
-                <p class="section-small">
-                    PROJE HAKKINDA
-                </p>
-
-                <h2>
-                    Modern yaşam için
-                    tasarlanan yeni nesil
-                    yaşam alanı.
-                </h2>
-
-            </div>
-
-
-            <div class="project-description">
-
-                <p>
-                    Manavoğlu Vera, çağdaş mimari anlayışı,
-                    nitelikli malzeme kullanımı ve kullanıcı
-                    odaklı tasarım yaklaşımıyla ele alınan
-                    bir konut projesidir.
-                </p>
-
-                <p>
-                    Projenin mimari tasarımında estetik,
-                    işlevsellik ve uzun ömürlü kullanım
-                    birlikte değerlendirilmiştir.
-                </p>
-
-            </div>
-
-        </section>
-
-
-
-        <section class="project-info-section">
-
-            <div class="info-box">
+                <img
+                    src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1800&q=90"
+                    alt="Güney görünüşü"
+                >
 
                 <span>
-                    PROJE TÜRÜ
+                    GÜNEY
                 </span>
-
-                <strong>
-                    KONUT
-                </strong>
 
             </div>
 
 
-            <div class="info-box">
+            <div class="elevation-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1800&q=90"
+                    alt="Doğu görünüşü"
+                >
 
                 <span>
-                    PROJE
+                    DOĞU
                 </span>
-
-                <strong>
-                    MANAVOĞLU VERA
-                </strong>
 
             </div>
 
 
-            <div class="info-box">
+            <div class="elevation-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=90"
+                    alt="Batı görünüşü"
+                >
 
                 <span>
-                    KONUM
+                    BATI
                 </span>
-
-                <strong>
-                    ANTALYA
-                </strong>
 
             </div>
 
 
-            <div class="info-box">
+        </div>
 
-                <span>
-                    TASARIM
-                </span>
-
-                <strong>
-                    MANAVOĞLU İNŞAAT
-                </strong>
-
-            </div>
-
-        </section>
+    </div>
 
 
-    </main>
+</section>
+
+
+
+<!-- =====================================
+     İLETİŞİM ÇAĞRISI
+===================================== -->
+
+<section class="project-contact">
+
+    <p>
+        MANAVOĞLU İNŞAAT
+    </p>
+
+    <h2>
+        Projeniz hakkında
+        konuşalım.
+    </h2>
+
+    <a href="#">
+        İLETİŞİME GEÇ →
+    </a>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================
+     TAB JAVASCRIPT
+===================================== -->
+
+<script>
+
+function openTab(event, tabName) {
+
+    const contents =
+        document.querySelectorAll(".tab-content");
+
+    const buttons =
+        document.querySelectorAll(".tab-button");
+
+
+    contents.forEach(function(content) {
+
+        content.classList.remove("active");
+
+    });
+
+
+    buttons.forEach(function(button) {
+
+        button.classList.remove("active");
+
+    });
+
+
+    document
+        .getElementById(tabName)
+        .classList.add("active");
+
+
+    event.currentTarget
+        .classList.add("active");
+
+}
+
+</script>
 
 
 </body>
