@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Manavoğlu İnşaat</title>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="navbar">
+
+    <!-- =========================
+         ÜST MENÜ
+    ========================== -->
+
+    <header class="navbar">
 
         <div class="logo">
             MANAVOĞLU
@@ -18,9 +25,9 @@
         <nav class="menu">
             <a href="#">ANA SAYFA</a>
             <a href="#">KURUMSAL</a>
-            <a href="#">PROJELER</a>
+            <a href="#projeler">PROJELER</a>
             <a href="#">HİZMETLER</a>
-            <a href="#">İLETİŞİM</a>
+            <a href="#iletisim">İLETİŞİM</a>
         </nav>
 
     </header>
@@ -28,16 +35,19 @@
 
     <main>
 
+        <!-- =========================
+             HERO
+        ========================== -->
+
         <section class="hero">
 
-            <img 
-                src="./images/hero.png" 
-                class="hero-image" 
+            <img
+                src="./images/hero.png"
+                class="hero-image"
                 alt="Manavoğlu İnşaat projesi"
             >
 
             <div class="hero-overlay"></div>
-
 
             <div class="hero-content">
 
@@ -55,19 +65,25 @@
                     geleceğe değer katan yaşam alanları.
                 </p>
 
-                <a href="#" class="hero-button">
+                <a href="#projeler" class="hero-button">
                     PROJELERİ KEŞFET
                 </a>
-                <div class="scroll-indicator">
-    <span></span>
-    SCROLL
-</div>
 
             </div>
 
+            <div class="scroll-indicator">
+                <span></span>
+                SCROLL
+            </div>
+
         </section>
-                
-        <section class="projects-section">
+
+
+        <!-- =========================
+             PROJELER
+        ========================== -->
+
+        <section class="projects-section" id="projeler">
 
             <div class="section-header">
 
@@ -89,27 +105,30 @@
 
             <div class="projects-grid">
 
+                <!-- PROJE 1 -->
 
                 <article class="project-card">
 
                     <div class="project-image">
-                        <img 
+
+                        <img
                             src="./images/hero.png"
-                            alt="MANAVOĞLU VERA"
+                            alt="Manavoğlu Vera"
                         >
+
                     </div>
 
                     <div class="project-info">
 
                         <p>
                             KONUT PROJESİ
-                        </p>""
+                        </p>
 
                         <h3>
-                            MANAVOĞLU VERA 
+                            MANAVOĞLU VERA
                         </h3>
 
-                        <a href="projeler/manavoglu-vera.html" class="project-button">
+                        <a href="projeler/manavoglu-vera.html">
                             PROJEYİ İNCELE →
                         </a>
 
@@ -118,14 +137,17 @@
                 </article>
 
 
+                <!-- PROJE 2 -->
 
                 <article class="project-card">
 
                     <div class="project-image">
-                        <img 
+
+                        <img
                             src="./images/hero.png"
                             alt="Pera Siva"
                         >
+
                     </div>
 
                     <div class="project-info">
@@ -147,14 +169,17 @@
                 </article>
 
 
+                <!-- PROJE 3 -->
 
                 <article class="project-card">
 
                     <div class="project-image">
-                        <img 
+
+                        <img
                             src="./images/hero.png"
-                            alt="Manavoğlu Projesi"
+                            alt="Yeni Proje"
                         >
+
                     </div>
 
                     <div class="project-info">
@@ -176,14 +201,17 @@
                 </article>
 
 
+                <!-- PROJE 4 -->
 
                 <article class="project-card">
 
                     <div class="project-image">
-                        <img 
+
+                        <img
                             src="./images/hero.png"
-                            alt="Manavoğlu Projesi"
+                            alt="Yeni Proje"
                         >
+
                     </div>
 
                     <div class="project-info">
@@ -203,12 +231,117 @@
                     </div>
 
                 </article>
-
 
             </div>
 
         </section>
 
     </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer" id="iletisim">
+
+        <div class="footer-top">
+
+            <!-- MARKA -->
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+                    MANAVOĞLU
+
+                    <span>
+                        İNŞAAT
+                    </span>
+                </div>
+
+                <p>
+                    Modern mimari, güçlü yapılar ve
+                    geleceğe değer katan yaşam alanları.
+                </p>
+
+            </div>
+
+
+            <!-- İLETİŞİM -->
+
+            <div class="footer-column">
+
+                <h3>
+                    İLETİŞİM
+                </h3>
+
+                <a href="tel:+905XXXXXXXXX">
+                    +90 5XX XXX XX XX
+                </a>
+
+                <a href="mailto:info@manavogluinsaat.com">
+                    info@manavogluinsaat.com
+                </a>
+
+            </div>
+
+
+            <!-- ADRES -->
+
+            <div class="footer-column">
+
+                <h3>
+                    ADRES
+                </h3>
+
+                <p>
+                    Antalya, Türkiye
+                </p>
+
+                <p>
+                    Manavoğlu İnşaat
+                </p>
+
+            </div>
+
+
+            <!-- SOSYAL MEDYA -->
+
+            <div class="footer-column">
+
+                <h3>
+                    SOSYAL MEDYA
+                </h3>
+
+                <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    INSTAGRAM ↗
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER ALT -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Manavoğlu İnşaat. Tüm hakları saklıdır.
+            </p>
+
+            <p>
+                ANTALYA / TÜRKİYE
+            </p>
+
+        </div>
+
+    </footer>
+
+
 </body>
 </html>
