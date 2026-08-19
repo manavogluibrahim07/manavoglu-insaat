@@ -26,7 +26,6 @@
         >
     </a>
 
-
     <!-- MASAÜSTÜ MENÜ -->
     <nav class="menu">
 
@@ -38,9 +37,34 @@
             KURUMSAL
         </a>
 
-        <a href="#projeler">
-            PROJELER
-        </a>
+        <!-- PROJELER -->
+        <div class="menu-dropdown">
+
+            <button
+                type="button"
+                class="projects-menu-button"
+                id="projectsMenuButton"
+            >
+                PROJELER
+                <span class="dropdown-arrow">⌄</span>
+            </button>
+
+            <div
+                class="dropdown-content"
+                id="projectsDropdown"
+            >
+
+                <a href="projeler.html#devam-eden">
+                    DEVAM EDEN PROJELER
+                </a>
+
+                <a href="projeler.html#tamamlanan">
+                    TAMAMLANAN PROJELER
+                </a>
+
+            </div>
+
+        </div>
 
         <a href="#">
             HİZMETLER
@@ -53,18 +77,16 @@
     </nav>
 
 
-    <!-- MOBİL HAMBURGER BUTONU -->
+    <!-- HAMBURGER -->
     <button
         class="hamburger"
         id="hamburger"
         type="button"
         aria-label="Menüyü aç"
     >
-
         <span></span>
         <span></span>
         <span></span>
-
     </button>
 
 
@@ -79,9 +101,31 @@
             KURUMSAL
         </a>
 
-        <a href="#projeler">
-            PROJELER
-        </a>
+        <!-- MOBİL PROJELER -->
+        <div class="mobile-dropdown">
+
+            <button
+                type="button"
+                class="mobile-dropdown-button"
+                id="mobileProjectsButton"
+            >
+                PROJELER
+                <span class="dropdown-arrow">⌄</span>
+            </button>
+
+            <div class="mobile-dropdown-content">
+
+                <a href="projeler.html#devam-eden">
+                    DEVAM EDEN PROJELER
+                </a>
+
+                <a href="projeler.html#tamamlanan">
+                    TAMAMLANAN PROJELER
+                </a>
+
+            </div>
+
+        </div>
 
         <a href="#">
             HİZMETLER
@@ -410,28 +454,90 @@
     </footer>
 <script>
 
+    /* =========================
+       HAMBURGER MENÜ
+    ========================= */
+
     const hamburger = document.getElementById("hamburger");
     const mobileMenu = document.getElementById("mobileMenu");
 
     hamburger.addEventListener("click", function () {
 
         hamburger.classList.toggle("active");
-
         mobileMenu.classList.toggle("active");
 
     });
 
 
-    // Menüdeki linke tıklayınca menüyü kapat
+    /* =========================
+       MASAÜSTÜ PROJELER MENÜSÜ
+    ========================= */
 
-    const mobileLinks = document.querySelectorAll(".mobile-menu a");
+    const projectsMenuButton =
+        document.getElementById("projectsMenuButton");
 
-    mobileLinks.forEach(function(link) {
+    const projectsDropdown =
+        document.getElementById("projectsDropdown");
 
-        link.addEventListener("click", function() {
+
+    projectsMenuButton.addEventListener("click", function (event) {
+
+        event.preventDefault();
+        event.stopPropagation();
+
+        projectsDropdown.classList.toggle("open");
+        projectsMenuButton.classList.toggle("open");
+
+    });
+
+
+    /* Sayfanın başka yerine tıklayınca dropdown kapanır */
+
+    document.addEventListener("click", function (event) {
+
+        if (
+            !event.target.closest(".menu-dropdown")
+        ) {
+
+            projectsDropdown.classList.remove("open");
+            projectsMenuButton.classList.remove("open");
+
+        }
+
+    });
+
+
+    /* =========================
+       MOBİL PROJELER MENÜSÜ
+    ========================= */
+
+    const mobileProjectsButton =
+        document.getElementById("mobileProjectsButton");
+
+    const mobileDropdown =
+        document.querySelector(".mobile-dropdown");
+
+
+    mobileProjectsButton.addEventListener("click", function () {
+
+        mobileDropdown.classList.toggle("open");
+
+    });
+
+
+    /* =========================
+       MOBİL LİNKLERE TIKLAYINCA MENÜ KAPANSIN
+    ========================= */
+
+    const mobileLinks =
+        document.querySelectorAll(".mobile-menu a");
+
+
+    mobileLinks.forEach(function (link) {
+
+        link.addEventListener("click", function () {
 
             hamburger.classList.remove("active");
-
             mobileMenu.classList.remove("active");
 
         });
