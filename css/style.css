@@ -3436,3 +3436,117 @@ img {
 
     transform: translateX(-50%) translateY(0);
 }
+/* =========================================
+   HAMBURGER - SON DÜZELTME
+========================================= */
+
+@media (max-width: 600px) {
+
+    /* Header */
+    .navbar {
+        height: 75px;
+        padding: 0 25px;
+        position: fixed;
+        z-index: 5000;
+    }
+
+    /* Logo */
+    .logo {
+        width: 130px;
+        position: relative;
+        z-index: 5001;
+    }
+
+    .logo img {
+        width: 130px;
+    }
+
+    /* Hamburger */
+    .hamburger {
+        display: flex !important;
+
+        width: 42px;
+        height: 42px;
+
+        padding: 0;
+        margin: 0;
+
+        border: none;
+        background: transparent;
+
+        position: relative;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 6px;
+
+        cursor: pointer;
+
+        z-index: 6000;
+    }
+
+    /* Hamburger çizgileri */
+    .hamburger span {
+        display: block !important;
+
+        width: 25px;
+        height: 2px;
+
+        margin: 0;
+
+        background-color: #ffffff;
+
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    /* X haline dönüşünce */
+    .hamburger.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* Masaüstü menüyü kesin olarak gizle */
+    .menu {
+        display: none !important;
+    }
+
+    /* Mobil menü */
+    .mobile-menu {
+        display: none;
+
+        position: fixed;
+
+        top: 75px;
+        left: 0;
+
+        width: 100%;
+        height: calc(100vh - 75px);
+
+        background: rgba(17, 17, 17, 0.98);
+
+        backdrop-filter: blur(12px);
+
+        padding: 40px 25px;
+
+        flex-direction: column;
+        align-items: center;
+
+        overflow-y: auto;
+
+        z-index: 5500;
+    }
+
+    .mobile-menu.active {
+        display: flex;
+    }
+
+}
