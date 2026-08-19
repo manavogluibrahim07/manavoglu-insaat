@@ -47,20 +47,19 @@ img {
 }
 
 .logo {
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 3px;
+    display: flex;
+    align-items: center;
+
+    width: 150px;
+
+    text-decoration: none;
 }
 
-.logo span {
+.logo img {
+    width: 150px;
+    height: auto;
+
     display: block;
-
-    font-size: 10px;
-    letter-spacing: 5px;
-
-    font-weight: normal;
-
-    margin-top: 4px;
 }
 
 .menu {
