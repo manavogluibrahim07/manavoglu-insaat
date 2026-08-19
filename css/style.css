@@ -51,15 +51,18 @@ img {
     align-items: center;
 
     width: 150px;
+    height: auto;
 
     text-decoration: none;
 }
 
 .logo img {
+    display: block;
+
     width: 150px;
     height: auto;
 
-    display: block;
+    object-fit: contain;
 }
 
 .menu {
@@ -69,7 +72,6 @@ img {
 
 .menu a {
     color: white;
-
     text-decoration: none;
 
     font-size: 12px;
@@ -88,11 +90,10 @@ img {
 ========================================= */
 
 .hero {
-    height: 100vh;
     width: 100%;
+    height: 100vh;
 
     position: relative;
-
     overflow: hidden;
 }
 
@@ -144,7 +145,6 @@ img {
 
 .hero-small {
     font-size: 11px;
-
     letter-spacing: 4px;
 
     margin-bottom: 20px;
@@ -156,10 +156,9 @@ img {
     font-size: clamp(50px, 6vw, 90px);
 
     line-height: 0.95;
-
     letter-spacing: 3px;
 
-    margin: 0 0 25px 0;
+    margin: 0 0 25px;
 
     font-weight: 500;
 }
@@ -173,12 +172,12 @@ img {
 
     max-width: 520px;
 
-    margin: 0 0 30px 0;
+    margin: 0 0 30px;
 }
 
 
 /* =========================================
-   PROJELER BUTONU
+   HERO BUTONU
 ========================================= */
 
 .hero-button {
@@ -201,7 +200,6 @@ img {
 
 .hero-button:hover {
     background-color: white;
-
     color: #111111;
 }
 
@@ -279,7 +277,7 @@ img {
 
     letter-spacing: 2px;
 
-    margin: 0 0 25px 0;
+    margin: 0 0 25px;
 }
 
 .section-description {
@@ -316,7 +314,6 @@ img {
 
 .project-image {
     width: 100%;
-
     height: 500px;
 
     overflow: hidden;
@@ -355,7 +352,7 @@ img {
 
     color: #777777;
 
-    margin: 0 0 12px 0;
+    margin: 0 0 12px;
 }
 
 .project-info h3 {
@@ -365,7 +362,7 @@ img {
 
     letter-spacing: 1px;
 
-    margin: 0 0 18px 0;
+    margin: 0 0 18px;
 }
 
 .project-info a {
@@ -395,8 +392,6 @@ img {
 
 .site-footer {
     width: 100%;
-
-    display: block;
 
     background-color: #111111;
 
@@ -437,29 +432,45 @@ img {
 
 .footer-brand {
     max-width: 360px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
+
+
+/* =========================================
+   FOOTER LOGO
+========================================= */
 
 .footer-logo {
-    font-size: 24px;
+    width: 280px;
+    height: auto;
 
-    font-weight: 600;
+    margin: 0 0 25px 0;
 
-    letter-spacing: 4px;
-
-    margin-bottom: 25px;
-}
-
-.footer-logo span {
     display: block;
 
-    font-size: 10px;
-
-    font-weight: 400;
-
-    letter-spacing: 6px;
-
-    margin-top: 7px;
+    line-height: 0;
 }
+
+.footer-logo img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    max-width: 280px;
+
+    object-fit: contain;
+
+    opacity: 1;
+}
+
+
+/* =========================================
+   FOOTER AÇIKLAMA
+========================================= */
 
 .footer-brand p {
     color: #999999;
@@ -495,7 +506,7 @@ img {
 
     color: #777777;
 
-    margin: 0 0 25px 0;
+    margin: 0 0 25px;
 }
 
 .footer-column a,
@@ -508,7 +519,7 @@ img {
 
     line-height: 1.8;
 
-    margin: 0 0 12px 0;
+    margin: 0 0 12px;
 
     transition: 0.3s;
 }
@@ -556,126 +567,31 @@ img {
 
 
 /* =========================================
-   TABLET
+   PROJE DETAY SAYFASI
 ========================================= */
-
-@media (max-width: 900px) {
-
-    .navbar {
-        padding: 0 35px;
-    }
-
-    .menu {
-        gap: 20px;
-    }
-
-    .footer-top {
-        grid-template-columns: 1fr 1fr;
-
-        gap: 50px;
-    }
-
-    .site-footer {
-        padding: 70px 35px 25px;
-    }
-}
-
-
-/* =========================================
-   MOBİL
-========================================= */
-
-@media (max-width: 600px) {
-
-    .navbar {
-        height: 75px;
-
-        padding: 0 25px;
-    }
-
-    .menu {
-        display: none;
-    }
-
-    .hero-content {
-        left: 6%;
-
-        bottom: 18%;
-
-        right: 6%;
-    }
-
-    .hero h1 {
-        font-size: 52px;
-    }
-
-    .hero-text {
-        font-size: 14px;
-    }
-
-    .scroll-indicator {
-        right: 20px;
-
-        bottom: 25px;
-    }
-
-    .projects-section {
-        padding: 90px 6%;
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
-
-        gap: 60px;
-    }
-
-    .project-image {
-        height: 400px;
-    }
-
-    .site-footer {
-        padding: 60px 25px 25px;
-    }
-
-    .footer-top {
-        grid-template-columns: 1fr;
-
-        gap: 40px;
-
-        padding-bottom: 50px;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-
-        align-items: flex-start;
-
-        gap: 12px;
-    }
-}
-/* =========================================
-   MANAVOĞLU VERA - PROJE DETAY SAYFASI
-========================================= */
-
-/* PROJE HERO */
 
 .project-hero {
     width: 100%;
     height: 100vh;
+
     position: relative;
     overflow: hidden;
+
     background: #111;
 }
 
 .project-hero > img {
     width: 100%;
     height: 100%;
+
     object-fit: cover;
+
     display: block;
 }
 
 .project-hero-overlay {
     position: absolute;
+
     inset: 0;
 
     background:
@@ -699,6 +615,7 @@ img {
 
 .project-hero-content p {
     font-size: 10px;
+
     letter-spacing: 5px;
 
     margin: 0 0 20px;
@@ -900,11 +817,9 @@ img {
     position: absolute;
 
     left: 0;
-
     bottom: -1px;
 
     width: 100%;
-
     height: 2px;
 
     background: #111;
@@ -915,8 +830,6 @@ img {
    TAB İÇERİKLERİ
 ========================================= */
 
-/* ÖNEMLİ KISIM */
-
 .tab-content {
     display: none !important;
 }
@@ -926,9 +839,6 @@ img {
 
     animation: tabFade 0.5s ease;
 }
-
-
-/* TAB ANİMASYONU */
 
 @keyframes tabFade {
 
@@ -1000,7 +910,6 @@ img {
 
 .plan-card img {
     width: 100%;
-
     height: 500px;
 
     object-fit: cover;
@@ -1069,7 +978,6 @@ img {
 
 .render-card img {
     width: 100%;
-
     height: 100%;
 
     object-fit: cover;
@@ -1108,7 +1016,6 @@ img {
 
 .interior-card img {
     width: 100%;
-
     height: 100%;
 
     object-fit: cover;
@@ -1126,7 +1033,6 @@ img {
     position: absolute;
 
     left: 25px;
-
     bottom: 25px;
 
     color: white;
@@ -1164,7 +1070,6 @@ img {
 
 .elevation-card img {
     width: 100%;
-
     height: 100%;
 
     object-fit: cover;
@@ -1182,7 +1087,6 @@ img {
     position: absolute;
 
     left: 25px;
-
     bottom: 25px;
 
     font-size: 10px;
@@ -1246,7 +1150,324 @@ img {
 
 
 /* =========================================
-   PROJE SAYFASI MOBİL
+   KURUMSAL SAYFASI
+========================================= */
+
+.corporate-hero {
+    width: 100%;
+    height: 70vh;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.45),
+            rgba(0,0,0,0.75)
+        ),
+        #111;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    padding: 0 8% 100px;
+
+    color: white;
+}
+
+.corporate-hero-content p {
+    font-size: 10px;
+
+    letter-spacing: 5px;
+
+    margin: 0 0 25px;
+
+    opacity: 0.7;
+}
+
+.corporate-hero-content h1 {
+    font-size: clamp(60px, 9vw, 130px);
+
+    line-height: 0.9;
+
+    font-weight: 400;
+
+    letter-spacing: 3px;
+
+    margin: 0 0 30px;
+}
+
+.corporate-hero-content span {
+    font-size: 10px;
+
+    letter-spacing: 4px;
+
+    opacity: 0.7;
+}
+
+
+/* =========================================
+   KURUMSAL SEKME MENÜSÜ
+========================================= */
+
+.corporate-tabs {
+    display: flex;
+
+    gap: 0;
+
+    background: #f4f3f0;
+
+    border-bottom: 1px solid #ccc;
+
+    padding: 0 8%;
+
+    position: sticky;
+
+    top: 90px;
+
+    z-index: 100;
+}
+
+.corporate-tabs a {
+    padding: 25px 35px;
+
+    color: #555;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    transition: 0.3s;
+
+    border-bottom: 2px solid transparent;
+}
+
+.corporate-tabs a:hover {
+    color: #111;
+
+    border-bottom-color: #111;
+}
+
+
+/* =========================================
+   KURUMSAL BAŞLIKLAR
+========================================= */
+
+.corporate-section-header {
+    max-width: 700px;
+
+    margin-bottom: 70px;
+}
+
+.corporate-section-header p {
+    font-size: 10px;
+
+    letter-spacing: 4px;
+
+    color: #777;
+
+    margin: 0 0 25px;
+}
+
+.corporate-section-header h2 {
+    font-size: clamp(45px, 6vw, 80px);
+
+    line-height: 0.95;
+
+    font-weight: 400;
+
+    letter-spacing: -1px;
+
+    margin: 0 0 25px;
+}
+
+.corporate-section-header span {
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    color: #999;
+}
+
+
+/* =========================================
+   YÖNETİM
+========================================= */
+
+.management-section {
+    background: #f4f3f0;
+
+    color: #111;
+
+    padding: 140px 8%;
+}
+
+.management-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 50px;
+}
+
+.manager-card {
+    overflow: hidden;
+}
+
+.manager-image {
+    width: 100%;
+
+    height: 650px;
+
+    overflow: hidden;
+
+    background: #ddd;
+}
+
+.manager-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    filter: grayscale(100%);
+
+    transition:
+        transform 0.7s ease,
+        filter 0.7s ease;
+}
+
+.manager-card:hover .manager-image img {
+    transform: scale(1.03);
+
+    filter: grayscale(0%);
+}
+
+.manager-info {
+    padding-top: 25px;
+}
+
+.manager-info p {
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    color: #888;
+
+    margin: 0 0 12px;
+}
+
+.manager-info h3 {
+    font-size: 28px;
+
+    font-weight: 400;
+
+    margin: 0 0 10px;
+}
+
+.manager-info span {
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    color: #777;
+}
+
+
+/* =========================================
+   VİZYON & MİSYON
+========================================= */
+
+.vision-mission-section {
+    background: #111;
+
+    color: white;
+
+    padding: 150px 8%;
+}
+
+.vision-mission-section
+.corporate-section-header p {
+    color: #777;
+}
+
+.vision-mission-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 100px;
+}
+
+.vision-mission-card {
+    border-top: 1px solid #444;
+
+    padding-top: 30px;
+}
+
+.vision-mission-card > span {
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    color: #777;
+}
+
+.vision-mission-card h3 {
+    font-size: 35px;
+
+    font-weight: 400;
+
+    letter-spacing: 2px;
+
+    margin: 30px 0;
+}
+
+.vision-mission-card p {
+    max-width: 500px;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+    color: #aaa;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 0 35px;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 50px;
+    }
+
+    .site-footer {
+        padding: 70px 35px 25px;
+    }
+}
+
+
+/* =========================================
+   MOBİL
 ========================================= */
 
 @media (max-width: 800px) {
@@ -1301,7 +1522,115 @@ img {
     .tab-button {
         padding: 16px 15px;
     }
+
+    .corporate-hero {
+        height: 60vh;
+
+        padding: 0 6% 70px;
+    }
+
+    .corporate-tabs {
+        padding: 0 6%;
+
+        top: 90px;
+
+        overflow-x: auto;
+    }
+
+    .corporate-tabs a {
+        padding: 20px;
+
+        white-space: nowrap;
+    }
+
+    .management-section,
+    .vision-mission-section {
+        padding: 100px 6%;
+    }
+
+    .management-grid,
+    .vision-mission-grid {
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+    .manager-image {
+        height: 500px;
+    }
+
 }
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: 75px;
+
+        padding: 0 25px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .hero-content {
+        left: 6%;
+
+        bottom: 18%;
+
+        right: 6%;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .hero-text {
+        font-size: 14px;
+    }
+
+    .scroll-indicator {
+        right: 20px;
+
+        bottom: 25px;
+    }
+
+    .projects-section {
+        padding: 90px 6%;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+    .project-image {
+        height: 400px;
+    }
+
+    .site-footer {
+        padding: 60px 25px 25px;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+        padding-bottom: 50px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+}
+
 
 @media (max-width: 500px) {
 
@@ -1319,429 +1648,11 @@ img {
         font-size: 55px;
     }
 
-}
-/* =========================================
-   KURUMSAL SAYFASI
-========================================= */
-
-
-/* =========================================
-   KURUMSAL HERO
-========================================= */
-
-.corporate-hero {
-
-    width: 100%;
-    height: 70vh;
-
-    position: relative;
-
-    background:
-        linear-gradient(
-            rgba(0,0,0,0.45),
-            rgba(0,0,0,0.75)
-        ),
-        #111;
-
-    display: flex;
-
-    align-items: flex-end;
-
-    padding: 0 8% 100px;
-
-    color: white;
-}
-
-
-.corporate-hero-content p {
-
-    font-size: 10px;
-
-    letter-spacing: 5px;
-
-    margin: 0 0 25px;
-
-    opacity: 0.7;
-}
-
-
-.corporate-hero-content h1 {
-
-    font-size: clamp(60px, 9vw, 130px);
-
-    line-height: 0.9;
-
-    font-weight: 400;
-
-    letter-spacing: 3px;
-
-    margin: 0 0 30px;
-}
-
-
-.corporate-hero-content span {
-
-    font-size: 10px;
-
-    letter-spacing: 4px;
-
-    opacity: 0.7;
-}
-
-
-
-/* =========================================
-   KURUMSAL SEKME MENÜSÜ
-========================================= */
-
-.corporate-tabs {
-
-    display: flex;
-
-    gap: 0;
-
-    background: #f4f3f0;
-
-    border-bottom: 1px solid #ccc;
-
-    padding: 0 8%;
-
-    position: sticky;
-
-    top: 90px;
-
-    z-index: 100;
-}
-
-
-.corporate-tabs a {
-
-    padding: 25px 35px;
-
-    color: #555;
-
-    text-decoration: none;
-
-    font-size: 10px;
-
-    letter-spacing: 2px;
-
-    transition: 0.3s;
-
-    border-bottom: 2px solid transparent;
-}
-
-
-.corporate-tabs a:hover {
-
-    color: #111;
-
-    border-bottom-color: #111;
-}
-
-
-
-/* =========================================
-   ORTAK BAŞLIK
-========================================= */
-
-.corporate-section-header {
-
-    max-width: 700px;
-
-    margin-bottom: 70px;
-}
-
-
-.corporate-section-header p {
-
-    font-size: 10px;
-
-    letter-spacing: 4px;
-
-    color: #777;
-
-    margin: 0 0 25px;
-}
-
-
-.corporate-section-header h2 {
-
-    font-size: clamp(45px, 6vw, 80px);
-
-    line-height: 0.95;
-
-    font-weight: 400;
-
-    letter-spacing: -1px;
-
-    margin: 0 0 25px;
-}
-
-
-.corporate-section-header span {
-
-    font-size: 10px;
-
-    letter-spacing: 3px;
-
-    color: #999;
-}
-
-
-
-/* =========================================
-   YÖNETİM
-========================================= */
-
-.management-section {
-
-    background: #f4f3f0;
-
-    color: #111;
-
-    padding: 140px 8%;
-}
-
-
-.management-grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 50px;
-}
-
-
-.manager-card {
-
-    overflow: hidden;
-}
-
-
-.manager-image {
-
-    width: 100%;
-
-    height: 650px;
-
-    overflow: hidden;
-
-    background: #ddd;
-}
-
-
-.manager-image img {
-
-    width: 100%;
-
-    height: 100%;
-
-    object-fit: cover;
-
-    display: block;
-
-    filter: grayscale(100%);
-
-    transition:
-        transform 0.7s ease,
-        filter 0.7s ease;
-}
-
-
-.manager-card:hover .manager-image img {
-
-    transform: scale(1.03);
-
-    filter: grayscale(0%);
-}
-
-
-.manager-info {
-
-    padding-top: 25px;
-}
-
-
-.manager-info p {
-
-    font-size: 9px;
-
-    letter-spacing: 3px;
-
-    color: #888;
-
-    margin: 0 0 12px;
-}
-
-
-.manager-info h3 {
-
-    font-size: 28px;
-
-    font-weight: 400;
-
-    margin: 0 0 10px;
-}
-
-
-.manager-info span {
-
-    font-size: 9px;
-
-    letter-spacing: 3px;
-
-    color: #777;
-}
-
-
-
-/* =========================================
-   VİZYON & MİSYON
-========================================= */
-
-.vision-mission-section {
-
-    background: #111;
-
-    color: white;
-
-    padding: 150px 8%;
-}
-
-
-.vision-mission-section
-.corporate-section-header p {
-
-    color: #777;
-}
-
-
-.vision-mission-grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 100px;
-}
-
-
-.vision-mission-card {
-
-    border-top: 1px solid #444;
-
-    padding-top: 30px;
-}
-
-
-.vision-mission-card > span {
-
-    font-size: 10px;
-
-    letter-spacing: 3px;
-
-    color: #777;
-}
-
-
-.vision-mission-card h3 {
-
-    font-size: 35px;
-
-    font-weight: 400;
-
-    letter-spacing: 2px;
-
-    margin: 30px 0;
-}
-
-
-.vision-mission-card p {
-
-    max-width: 500px;
-
-    font-size: 16px;
-
-    line-height: 1.9;
-
-    color: #aaa;
-
-    margin: 0;
-}
-
-
-
-/* =========================================
-   KURUMSAL MOBİL
-========================================= */
-
-@media (max-width: 800px) {
-
-    .corporate-hero {
-
-        height: 60vh;
-
-        padding:
-            0 6% 70px;
-    }
-
-
-    .corporate-tabs {
-
-        padding: 0 6%;
-
-        top: 90px;
-
-        overflow-x: auto;
-    }
-
-
-    .corporate-tabs a {
-
-        padding:
-            20px 20px;
-
-        white-space: nowrap;
-    }
-
-
-    .management-section,
-    .vision-mission-section {
-
-        padding:
-            100px 6%;
-    }
-
-
-    .management-grid,
-    .vision-mission-grid {
-
-        grid-template-columns: 1fr;
-
-        gap: 60px;
-    }
-
-
-    .manager-image {
-
-        height: 500px;
-    }
-
-}
-
-
-@media (max-width: 500px) {
-
     .corporate-hero-content h1 {
-
         font-size: 60px;
     }
 
-
     .manager-image {
-
         height: 400px;
     }
 
