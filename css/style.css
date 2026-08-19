@@ -3550,3 +3550,398 @@ img {
     }
 
 }
+/* =========================================
+   GURUR TABLOMuz
+========================================= */
+
+.stats-section {
+    background: #111111;
+
+    color: #ffffff;
+
+    padding: 130px 8% 140px;
+
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+
+/* BAŞLIK */
+
+.stats-header {
+    max-width: 700px;
+
+    margin-bottom: 90px;
+}
+
+.stats-header p {
+    font-size: 10px;
+
+    letter-spacing: 4px;
+
+    color: #777777;
+
+    margin: 0 0 25px;
+}
+
+.stats-header h2 {
+    font-size: clamp(45px, 6vw, 80px);
+
+    line-height: 0.95;
+
+    font-weight: 400;
+
+    letter-spacing: 1px;
+
+    margin: 0 0 30px;
+}
+
+.stats-header span {
+    display: block;
+
+    max-width: 500px;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    color: #888888;
+}
+
+
+/* RAKAMLAR */
+
+.stats-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    border-top: 1px solid #444444;
+}
+
+
+/* TEK RAKAM */
+
+.stat-item {
+    min-height: 220px;
+
+    padding: 45px 35px 30px;
+
+    border-right: 1px solid #444444;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+.stat-item:first-child {
+    border-left: 1px solid #444444;
+}
+
+
+/* SAYI */
+
+.stat-item strong {
+    display: block;
+
+    font-size: clamp(55px, 6vw, 90px);
+
+    line-height: 1;
+
+    font-weight: 300;
+
+    letter-spacing: -2px;
+}
+
+
+/* BAŞLIK */
+
+.stat-item span {
+    display: block;
+
+    font-size: 9px;
+
+    line-height: 1.6;
+
+    letter-spacing: 3px;
+
+    color: #888888;
+}
+
+
+/* HOVER */
+
+.stat-item {
+    transition: background-color 0.4s ease;
+}
+
+.stat-item:hover {
+    background-color: #181818;
+}
+
+
+/* =========================================
+   GURUR TABLOSU - MOBİL
+========================================= */
+
+@media (max-width: 900px) {
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat-item:nth-child(2) {
+        border-right: none;
+    }
+
+    .stat-item:nth-child(3) {
+        border-left: 1px solid #444444;
+        border-top: 1px solid #444444;
+    }
+
+    .stat-item:nth-child(4) {
+        border-top: 1px solid #444444;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .stats-section {
+        padding: 90px 6% 100px;
+    }
+
+    .stats-header {
+        margin-bottom: 60px;
+    }
+
+    .stats-header h2 {
+        font-size: 50px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-item {
+        min-height: 180px;
+
+        padding: 35px 25px;
+
+        border-left: 1px solid #444444 !important;
+        border-right: 1px solid #444444 !important;
+        border-top: 1px solid #444444;
+    }
+
+    .stat-item:first-child {
+        border-top: none;
+    }
+
+    .stat-item strong {
+        font-size: 65px;
+    }
+
+}
+/* =========================================
+   GURUR TABLOMUZ
+========================================= */
+
+.stats-section {
+    background: #f4f3f0;
+    color: #111111;
+
+    padding: 150px 8% 160px;
+
+    position: relative;
+}
+
+
+/* BAŞLIK */
+
+.stats-header {
+    max-width: 700px;
+
+    margin-bottom: 110px;
+}
+
+.stats-header p {
+    margin: 0 0 25px;
+
+    font-size: 10px;
+
+    letter-spacing: 4px;
+
+    color: #777777;
+}
+
+.stats-header h2 {
+    margin: 0 0 30px;
+
+    font-size: clamp(50px, 7vw, 100px);
+
+    line-height: 0.9;
+
+    font-weight: 400;
+
+    letter-spacing: 1px;
+}
+
+.stats-header span {
+    display: block;
+
+    max-width: 480px;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    color: #666666;
+}
+
+
+/* RAKAMLAR */
+
+.stats-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    border-top: 1px solid #cccccc;
+
+    border-bottom: 1px solid #cccccc;
+}
+
+
+/* TEK RAKAM */
+
+.stat-item {
+    min-height: 220px;
+
+    padding: 45px 35px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    border-right: 1px solid #cccccc;
+}
+
+.stat-item:first-child {
+    padding-left: 0;
+}
+
+.stat-item:last-child {
+    border-right: none;
+}
+
+
+/* BÜYÜK RAKAM */
+
+.stat-item strong {
+    font-size: clamp(55px, 6vw, 90px);
+
+    line-height: 1;
+
+    font-weight: 300;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 20px;
+}
+
+
+/* AÇIKLAMA */
+
+.stat-item span {
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    color: #777777;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .stats-section {
+        padding: 110px 6%;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat-item {
+        min-height: 180px;
+
+        padding: 35px;
+    }
+
+    .stat-item:first-child {
+        padding-left: 35px;
+    }
+
+    .stat-item:nth-child(2) {
+        border-right: none;
+    }
+
+    .stat-item:nth-child(3),
+    .stat-item:nth-child(4) {
+        border-top: 1px solid #cccccc;
+    }
+
+}
+
+
+/* =========================================
+   TELEFON
+========================================= */
+
+@media (max-width: 600px) {
+
+    .stats-section {
+        padding: 90px 6% 100px;
+    }
+
+    .stats-header {
+        margin-bottom: 70px;
+    }
+
+    .stats-header h2 {
+        font-size: 55px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-item,
+    .stat-item:first-child {
+        min-height: auto;
+
+        padding: 35px 0;
+
+        border-right: none;
+
+        border-bottom: 1px solid #cccccc;
+    }
+
+    .stat-item:last-child {
+        border-bottom: none;
+    }
+
+    .stat-item strong {
+        font-size: 65px;
+    }
+
+}

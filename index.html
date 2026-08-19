@@ -1,146 +1,212 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="icon" type="image/png" href="./images/favicon.png">
 
     <title>Manavoğlu İnşaat</title>
 
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
+
 <body>
+
 
     <!-- =========================
          ÜST MENÜ
     ========================== -->
 
-   <header class="navbar">
+    <header class="navbar">
 
-    <!-- LOGO -->
-    <a href="index.html" class="logo">
-        <img
-            src="./images/manavoglu logo seffaf site icin.png"
-            alt="Manavoğlu İnşaat"
+
+        <!-- LOGO -->
+
+        <a href="index.html" class="logo">
+
+            <img
+                src="./images/manavoglu logo seffaf site icin.png"
+                alt="Manavoğlu İnşaat"
+            >
+
+        </a>
+
+
+
+        <!-- MASAÜSTÜ MENÜ -->
+
+        <nav class="menu">
+
+
+            <a href="index.html">
+                ANA SAYFA
+            </a>
+
+
+            <a href="kurumsal.html">
+                KURUMSAL
+            </a>
+
+
+
+            <!-- PROJELER -->
+
+            <div class="menu-dropdown">
+
+
+                <button
+                    type="button"
+                    class="projects-menu-button"
+                    id="projectsMenuButton"
+                >
+
+                    PROJELER
+
+                    <span class="dropdown-arrow">
+                        ⌄
+                    </span>
+
+                </button>
+
+
+
+                <div
+                    class="dropdown-content"
+                    id="projectsDropdown"
+                >
+
+                    <a href="projeler.html#devam-eden">
+                        DEVAM EDEN PROJELER
+                    </a>
+
+                    <a href="projeler.html#tamamlanan">
+                        TAMAMLANAN PROJELER
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+
+            <a href="#">
+                HİZMETLER
+            </a>
+
+
+            <a href="#iletisim">
+                İLETİŞİM
+            </a>
+
+
+        </nav>
+
+
+
+        <!-- HAMBURGER -->
+
+        <button
+            class="hamburger"
+            id="hamburger"
+            type="button"
+            aria-label="Menüyü aç"
         >
-    </a>
 
-    <!-- MASAÜSTÜ MENÜ -->
-    <nav class="menu">
+            <span></span>
+            <span></span>
+            <span></span>
 
-        <a href="index.html">
-            ANA SAYFA
-        </a>
-
-        <a href="kurumsal.html">
-            KURUMSAL
-        </a>
-
-        <!-- PROJELER -->
-        <div class="menu-dropdown">
-
-            <button
-                type="button"
-                class="projects-menu-button"
-                id="projectsMenuButton"
-            >
-                PROJELER
-                <span class="dropdown-arrow">⌄</span>
-            </button>
-
-            <div
-                class="dropdown-content"
-                id="projectsDropdown"
-            >
-
-                <a href="projeler.html#devam-eden">
-                    DEVAM EDEN PROJELER
-                </a>
-
-                <a href="projeler.html#tamamlanan">
-                    TAMAMLANAN PROJELER
-                </a>
-
-            </div>
-
-        </div>
-
-        <a href="#">
-            HİZMETLER
-        </a>
-
-        <a href="#iletisim">
-            İLETİŞİM
-        </a>
-
-    </nav>
+        </button>
 
 
-    <!-- HAMBURGER -->
-    <button
-        class="hamburger"
-        id="hamburger"
-        type="button"
-        aria-label="Menüyü aç"
-    >
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
+
+        <!-- MOBİL MENÜ -->
+
+        <nav
+            class="mobile-menu"
+            id="mobileMenu"
+        >
 
 
-    <!-- MOBİL MENÜ -->
-    <nav class="mobile-menu" id="mobileMenu">
+            <a href="index.html">
+                ANA SAYFA
+            </a>
 
-        <a href="index.html">
-            ANA SAYFA
-        </a>
 
-        <a href="kurumsal.html">
-            KURUMSAL
-        </a>
+            <a href="kurumsal.html">
+                KURUMSAL
+            </a>
 
-        <!-- MOBİL PROJELER -->
-        <div class="mobile-dropdown">
 
-            <button
-                type="button"
-                class="mobile-dropdown-button"
-                id="mobileProjectsButton"
-            >
-                PROJELER
-                <span class="dropdown-arrow">⌄</span>
-            </button>
 
-            <div class="mobile-dropdown-content">
+            <!-- MOBİL PROJELER -->
 
-                <a href="projeler.html#devam-eden">
-                    DEVAM EDEN PROJELER
-                </a>
+            <div class="mobile-dropdown">
 
-                <a href="projeler.html#tamamlanan">
-                    TAMAMLANAN PROJELER
-                </a>
+
+                <button
+                    type="button"
+                    class="mobile-dropdown-button"
+                    id="mobileProjectsButton"
+                >
+
+                    PROJELER
+
+                    <span class="dropdown-arrow">
+                        ⌄
+                    </span>
+
+                </button>
+
+
+
+                <div class="mobile-dropdown-content">
+
+
+                    <a href="projeler.html#devam-eden">
+                        DEVAM EDEN PROJELER
+                    </a>
+
+
+                    <a href="projeler.html#tamamlanan">
+                        TAMAMLANAN PROJELER
+                    </a>
+
+
+                </div>
+
 
             </div>
 
-        </div>
 
-        <a href="#">
-            HİZMETLER
-        </a>
 
-        <a href="#iletisim">
-            İLETİŞİM
-        </a>
+            <a href="#">
+                HİZMETLER
+            </a>
 
-    </nav>
 
-</header>
+            <a href="#iletisim">
+                İLETİŞİM
+            </a>
+
+
+        </nav>
+
+
+    </header>
+
+
 
 
     <main>
+
+
 
         <!-- =========================
              HERO
@@ -148,403 +214,762 @@
 
         <section class="hero">
 
+
             <img
                 src="./images/hero.png"
                 class="hero-image"
                 alt="Manavoğlu İnşaat projesi"
             >
 
+
             <div class="hero-overlay"></div>
 
+
+
             <div class="hero-content">
+
 
                 <p class="hero-small">
                     MANAVOĞLU İNŞAAT
                 </p>
+
 
                 <h1>
                     YAPILARIN<br>
                     ÖTESİNDE.
                 </h1>
 
+
                 <p class="hero-text">
+
                     Modern mimari, güçlü yapılar ve
                     geleceğe değer katan yaşam alanları.
+
                 </p>
 
-                <a href="#projeler" class="hero-button">
+
+                <a
+                    href="#projeler"
+                    class="hero-button"
+                >
                     PROJELERİ KEŞFET
                 </a>
 
+
             </div>
 
+
+
             <div class="scroll-indicator">
+
                 <span></span>
+
                 SCROLL
+
             </div>
+
 
         </section>
 
 
+
+
         <!-- =========================
-             PROJELER
+             GURUR TABLOMUZ
         ========================== -->
 
-        <section class="projects-section" id="projeler">
+        <section class="stats-section">
+
+
+            <!-- BAŞLIK -->
+
+            <div class="stats-header">
+
+
+                <p>
+                    MANAVOĞLU İNŞAAT
+                </p>
+
+
+                <h2>
+
+                    GURUR TABLOMUZ.<br>
+                
+
+                </h2>
+
+
+                <span>
+
+                    Tecrübemizi, tamamladığımız projeler ve
+                    kazandığımız güvenle büyütüyoruz.
+
+                </span>
+
+
+            </div>
+
+
+
+            <!-- RAKAMLAR -->
+
+            <div class="stats-grid">
+
+
+                <!-- PROJE -->
+
+                <div class="stat-item">
+
+                    <strong>
+                        38
+                    </strong>
+
+                    <span>
+                        PROJE
+                    </span>
+
+                </div>
+
+
+
+                <!-- İNŞAAT -->
+
+                <div class="stat-item">
+
+                    <strong>
+                        20+
+                    </strong>
+
+                    <span>
+                        İNŞAAT
+                    </span>
+
+                </div>
+
+
+
+                <!-- DAİRE -->
+
+                <div class="stat-item">
+
+                    <strong>
+                        180+
+                    </strong>
+
+                    <span>
+                        DAİRE
+                    </span>
+
+                </div>
+
+
+
+                <!-- MUTLU MÜŞTERİ -->
+
+                <div class="stat-item">
+
+                    <strong>
+                        300+
+                    </strong>
+
+                    <span>
+                        MUTLU MÜŞTERİ
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+        <!-- =========================
+             ÖNE ÇIKAN PROJELER
+        ========================== -->
+
+        <section
+            class="projects-section"
+            id="projeler"
+        >
+
 
             <div class="section-header">
+
 
                 <p class="section-small">
                     MANAVOĞLU İNŞAAT
                 </p>
 
+
                 <h2>
                     ÖNE ÇIKAN PROJELER
                 </h2>
 
+
                 <p class="section-description">
+
                     Mimari değer, kaliteli işçilik ve
                     geleceğe yönelik yaşam alanları.
+
                 </p>
+
 
             </div>
 
 
+
+
             <div class="projects-grid">
 
-                <!-- PROJE 1 -->
+
+
+                <!-- =========================
+                     PROJE 1
+                ========================== -->
 
                 <article class="project-card">
 
+
                     <div class="project-image">
+
 
                         <img
                             src="./images/hero.png"
                             alt="Manavoğlu Vera"
                         >
 
+
                     </div>
 
+
+
                     <div class="project-info">
+
 
                         <p>
                             KONUT PROJESİ
                         </p>
 
+
                         <h3>
                             MANAVOĞLU VERA
                         </h3>
 
+
                         <a href="projeler/manavoglu-vera.html">
+
                             PROJEYİ İNCELE →
+
                         </a>
 
+
                     </div>
+
 
                 </article>
 
 
-                <!-- PROJE 2 -->
+
+
+                <!-- =========================
+                     PROJE 2
+                ========================== -->
 
                 <article class="project-card">
 
+
                     <div class="project-image">
+
 
                         <img
                             src="./images/hero.png"
                             alt="Pera Siva"
                         >
 
+
                     </div>
 
+
+
                     <div class="project-info">
+
 
                         <p>
                             KONUT PROJESİ
                         </p>
+
 
                         <h3>
                             PERA SİVA
                         </h3>
 
+
                         <a href="#">
+
                             PROJEYİ İNCELE →
+
                         </a>
 
+
                     </div>
+
 
                 </article>
 
 
-                <!-- PROJE 3 -->
+
+
+                <!-- =========================
+                     PROJE 3
+                ========================== -->
 
                 <article class="project-card">
 
+
                     <div class="project-image">
+
 
                         <img
                             src="./images/hero.png"
                             alt="Yeni Proje"
                         >
 
+
                     </div>
 
+
+
                     <div class="project-info">
+
 
                         <p>
                             KONUT PROJESİ
                         </p>
 
+
                         <h3>
                             YENİ PROJE
                         </h3>
 
+
                         <a href="#">
+
                             PROJEYİ İNCELE →
+
                         </a>
 
+
                     </div>
+
 
                 </article>
 
 
-                <!-- PROJE 4 -->
+
+
+                <!-- =========================
+                     PROJE 4
+                ========================== -->
 
                 <article class="project-card">
 
+
                     <div class="project-image">
+
 
                         <img
                             src="./images/hero.png"
                             alt="Yeni Proje"
                         >
 
+
                     </div>
 
+
+
                     <div class="project-info">
+
 
                         <p>
                             KONUT PROJESİ
                         </p>
 
+
                         <h3>
                             YENİ PROJE
                         </h3>
 
+
                         <a href="#">
+
                             PROJEYİ İNCELE →
+
                         </a>
+
 
                     </div>
 
+
                 </article>
+
+
 
             </div>
 
+
         </section>
 
+
     </main>
+
+
 
 
     <!-- =========================
          FOOTER
     ========================== -->
 
-    <footer class="site-footer" id="iletisim">
+    <footer
+        class="site-footer"
+        id="iletisim"
+    >
+
 
         <div class="footer-top">
+
+
 
             <!-- MARKA -->
 
             <div class="footer-brand">
 
+
                 <div class="footer-logo">
-                    
+
+
                     <img
-        src="./images/manavoglu logo seffaf site icin.png"
-        alt="Manavoğlu İnşaat"
-    >
+                        src="./images/manavoglu logo seffaf site icin.png"
+                        alt="Manavoğlu İnşaat"
+                    >
+
+
                 </div>
 
+
                 <p>
+
                     Modern mimari, güçlü yapılar ve
                     geleceğe değer katan yaşam alanları.
+
                 </p>
 
+
             </div>
+
+
 
 
             <!-- İLETİŞİM -->
 
             <div class="footer-column">
 
+
                 <h3>
                     İLETİŞİM
                 </h3>
+
+
                 <!-- İBRAHİM MANAVOĞLU -->
+
                 <a href="tel:+905399486288">
+
                     +90 539 948 62 88
+
                 </a>
-                 <!-- MEHMET MANAVOĞLU -->
+
+
+                <!-- MEHMET MANAVOĞLU -->
+
                 <a href="tel:+905354455082">
+
                     +90 535 445 50 82
+
                 </a>
+
 
                 <a href="mailto:manavogluibrahim07@gmail.com">
+
                     manavogluibrahim07@gmail.com
+
                 </a>
 
+
             </div>
+
+
 
 
             <!-- ADRES -->
 
             <div class="footer-column">
 
+
                 <h3>
                     ADRES
                 </h3>
+
 
                 <p>
                     Antalya, Türkiye
                 </p>
 
+
                 <p>
                     Manavoğlu İnşaat Mimarlık
                 </p>
 
+
             </div>
+
+
 
 
             <!-- SOSYAL MEDYA -->
 
             <div class="footer-column">
 
+
                 <h3>
                     SOSYAL MEDYA
                 </h3>
+
 
                 <a
                     href="https://www.instagram.com"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
+
                     INSTAGRAM ↗
+
                 </a>
+
 
             </div>
 
+
         </div>
+
+
 
 
         <!-- FOOTER ALT -->
 
         <div class="footer-bottom">
 
+
             <p>
-                © 2026 Manavoğlu İnşaat. Tüm hakları saklıdır.
+
+                © 2026 Manavoğlu İnşaat.
+                Tüm hakları saklıdır.
+
             </p>
+
 
             <p>
                 ANTALYA / TÜRKİYE
             </p>
 
+
         </div>
 
+
     </footer>
-<script>
-
-    /* =========================
-       HAMBURGER MENÜ
-    ========================= */
-
-    const hamburger = document.getElementById("hamburger");
-    const mobileMenu = document.getElementById("mobileMenu");
-
-    hamburger.addEventListener("click", function () {
-
-        hamburger.classList.toggle("active");
-        mobileMenu.classList.toggle("active");
-
-    });
 
 
-    /* =========================
-       MASAÜSTÜ PROJELER MENÜSÜ
-    ========================= */
-
-    const projectsMenuButton =
-        document.getElementById("projectsMenuButton");
-
-    const projectsDropdown =
-        document.getElementById("projectsDropdown");
 
 
-    projectsMenuButton.addEventListener("click", function (event) {
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
 
-        event.preventDefault();
-        event.stopPropagation();
-
-        projectsDropdown.classList.toggle("open");
-        projectsMenuButton.classList.toggle("open");
-
-    });
+    <script>
 
 
-    /* Sayfanın başka yerine tıklayınca dropdown kapanır */
+        /* =========================
+           HAMBURGER MENÜ
+        ========================== */
 
-    document.addEventListener("click", function (event) {
+        const hamburger =
+            document.getElementById("hamburger");
 
-        if (
-            !event.target.closest(".menu-dropdown")
-        ) {
-
-            projectsDropdown.classList.remove("open");
-            projectsMenuButton.classList.remove("open");
-
-        }
-
-    });
+        const mobileMenu =
+            document.getElementById("mobileMenu");
 
 
-    /* =========================
-       MOBİL PROJELER MENÜSÜ
-    ========================= */
+        hamburger.addEventListener(
+            "click",
+            function () {
 
-    const mobileProjectsButton =
-        document.getElementById("mobileProjectsButton");
+                hamburger.classList.toggle("active");
 
-    const mobileDropdown =
-        document.querySelector(".mobile-dropdown");
+                mobileMenu.classList.toggle("active");
 
-
-    mobileProjectsButton.addEventListener("click", function () {
-
-        mobileDropdown.classList.toggle("open");
-
-    });
+            }
+        );
 
 
-    /* =========================
-       MOBİL LİNKLERE TIKLAYINCA MENÜ KAPANSIN
-    ========================= */
-
-    const mobileLinks =
-        document.querySelectorAll(".mobile-menu a");
 
 
-    mobileLinks.forEach(function (link) {
+        /* =========================
+           MASAÜSTÜ PROJELER MENÜSÜ
+        ========================== */
 
-        link.addEventListener("click", function () {
+        const projectsMenuButton =
+            document.getElementById(
+                "projectsMenuButton"
+            );
 
-            hamburger.classList.remove("active");
-            mobileMenu.classList.remove("active");
 
-        });
+        const projectsDropdown =
+            document.getElementById(
+                "projectsDropdown"
+            );
 
-    });
 
-</script>
+
+        projectsMenuButton.addEventListener(
+            "click",
+            function (event) {
+
+                event.preventDefault();
+
+                event.stopPropagation();
+
+
+                projectsDropdown.classList.toggle(
+                    "open"
+                );
+
+
+                projectsMenuButton.classList.toggle(
+                    "open"
+                );
+
+            }
+        );
+
+
+
+        /* SAYFANIN BAŞKA YERİNE
+           TIKLAYINCA DROPDOWN KAPANIR */
+
+        document.addEventListener(
+            "click",
+            function (event) {
+
+
+                if (
+                    !event.target.closest(
+                        ".menu-dropdown"
+                    )
+                ) {
+
+
+                    projectsDropdown.classList.remove(
+                        "open"
+                    );
+
+
+                    projectsMenuButton.classList.remove(
+                        "open"
+                    );
+
+                }
+
+            }
+        );
+
+
+
+
+        /* =========================
+           MOBİL PROJELER MENÜSÜ
+        ========================== */
+
+        const mobileProjectsButton =
+            document.getElementById(
+                "mobileProjectsButton"
+            );
+
+
+        const mobileDropdown =
+            document.querySelector(
+                ".mobile-dropdown"
+            );
+
+
+
+        mobileProjectsButton.addEventListener(
+            "click",
+            function () {
+
+                mobileDropdown.classList.toggle(
+                    "open"
+                );
+
+            }
+        );
+
+
+
+
+        /* =========================
+           MOBİL LİNKLERE TIKLAYINCA
+           MENÜ KAPANSIN
+        ========================== */
+
+        const mobileLinks =
+            document.querySelectorAll(
+                ".mobile-menu a"
+            );
+
+
+
+        mobileLinks.forEach(
+            function (link) {
+
+
+                link.addEventListener(
+                    "click",
+                    function () {
+
+
+                        hamburger.classList.remove(
+                            "active"
+                        );
+
+
+                        mobileMenu.classList.remove(
+                            "active"
+                        );
+
+
+                    }
+                );
+
+
+            }
+        );
+
+
+    </script>
+
 
 </body>
+
 </html>
