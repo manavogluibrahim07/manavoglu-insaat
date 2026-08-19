@@ -16,35 +16,82 @@
          ÜST MENÜ
     ========================== -->
 
-    <header class="navbar">
+   <header class="navbar">
 
+    <!-- LOGO -->
     <a href="index.html" class="logo">
-        <img src="./images/manavoglu logo seffaf site icin.png" alt="Manavoğlu İnşaat">
+        <img
+            src="./images/manavoglu logo seffaf site icin.png"
+            alt="Manavoğlu İnşaat"
+        >
     </a>
 
-    <nav class="menu" id="mobileMenu">
 
-        <a href="index.html">ANA SAYFA</a>
+    <!-- MASAÜSTÜ MENÜ -->
+    <nav class="menu">
 
-        <a href="kurumsal.html">KURUMSAL</a>
+        <a href="index.html">
+            ANA SAYFA
+        </a>
 
-        <a href="#projeler">PROJELER</a>
+        <a href="kurumsal.html">
+            KURUMSAL
+        </a>
 
-        <a href="#">HİZMETLER</a>
+        <a href="#projeler">
+            PROJELER
+        </a>
 
-        <a href="#iletisim">İLETİŞİM</a>
+        <a href="#">
+            HİZMETLER
+        </a>
+
+        <a href="#iletisim">
+            İLETİŞİM
+        </a>
 
     </nav>
 
-    <!-- HAMBURGER BUTONU -->
 
-    <button class="hamburger" id="hamburger" aria-label="Menüyü aç">
+    <!-- MOBİL HAMBURGER BUTONU -->
+    <button
+        class="hamburger"
+        id="hamburger"
+        type="button"
+        aria-label="Menüyü aç"
+    >
 
         <span></span>
         <span></span>
         <span></span>
 
     </button>
+
+
+    <!-- MOBİL MENÜ -->
+    <nav class="mobile-menu" id="mobileMenu">
+
+        <a href="index.html">
+            ANA SAYFA
+        </a>
+
+        <a href="kurumsal.html">
+            KURUMSAL
+        </a>
+
+        <a href="#projeler">
+            PROJELER
+        </a>
+
+        <a href="#">
+            HİZMETLER
+        </a>
+
+        <a href="#iletisim">
+            İLETİŞİM
+        </a>
+
+    </nav>
 
 </header>
 
@@ -361,7 +408,37 @@
         </div>
 
     </footer>
+<script>
 
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    hamburger.addEventListener("click", function () {
+
+        hamburger.classList.toggle("active");
+
+        mobileMenu.classList.toggle("active");
+
+    });
+
+
+    // Menüdeki linke tıklayınca menüyü kapat
+
+    const mobileLinks = document.querySelectorAll(".mobile-menu a");
+
+    mobileLinks.forEach(function(link) {
+
+        link.addEventListener("click", function() {
+
+            hamburger.classList.remove("active");
+
+            mobileMenu.classList.remove("active");
+
+        });
+
+    });
+
+</script>
 
 </body>
 </html>

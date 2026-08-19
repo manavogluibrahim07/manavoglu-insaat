@@ -1834,3 +1834,158 @@ img {
     }
 
 }
+/* =========================================
+   MOBİL HAMBURGER MENÜ
+========================================= */
+
+.hamburger {
+    display: none;
+
+    width: 42px;
+    height: 42px;
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    position: relative;
+
+    z-index: 1100;
+}
+
+
+/* Hamburger çizgileri */
+
+.hamburger span {
+    display: block;
+
+    width: 25px;
+    height: 1px;
+
+    background: white;
+
+    margin: 6px auto;
+
+    transition: 0.3s ease;
+}
+
+
+/* =========================================
+   MOBİL MENÜ
+========================================= */
+
+.mobile-menu {
+    display: none;
+
+    position: fixed;
+
+    top: 75px;
+    left: 0;
+
+    width: 100%;
+
+    background: rgba(17, 17, 17, 0.97);
+
+    backdrop-filter: blur(12px);
+
+    padding: 30px 25px 40px;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+    z-index: 1050;
+
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+
+.mobile-menu a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    padding: 8px 0;
+
+    transition: 0.3s;
+}
+
+
+.mobile-menu a:hover {
+    opacity: 0.5;
+}
+
+
+/* MENÜ AÇILDIĞINDA */
+
+.mobile-menu.active {
+    display: flex;
+}
+
+
+/* =========================================
+   HAMBURGER → X ANİMASYONU
+========================================= */
+
+.hamburger.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+
+/* =========================================
+   MOBİL
+========================================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: 75px;
+
+        padding: 0 25px;
+    }
+
+
+    /* Normal menüyü gizle */
+
+    .menu {
+        display: none;
+    }
+
+
+    /* Hamburgeri göster */
+
+    .hamburger {
+        display: block;
+    }
+
+
+    /* Mobil logo */
+
+    .logo {
+        width: 130px;
+    }
+
+
+    .logo img {
+        width: 130px;
+    }
+
+}
